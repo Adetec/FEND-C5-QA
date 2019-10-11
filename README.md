@@ -89,8 +89,10 @@ Can I use Bootstrap to make my app responsive for this project?
 #### Answer
 
 No, Bootstrap and other CSS frameworks should not be used, all responsiveness should be done with CSS.
+***
 
-
+### Q4. Accessibility
+How can I be sure that my work on accessibility meets the specification? 
 
 
 
