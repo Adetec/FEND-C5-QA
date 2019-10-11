@@ -1,5 +1,15 @@
-# FEND-C5 QA
 
+- [Restaurant reviews project](#restaurant-reviews-project)
+  - [Q1. My map doesn't show up](#q1-my-map-doesnt-show-up)
+    - [Answer](#answer)
+  - [Q2. Problem with python server](#q2-problem-with-python-server)
+    - [Answer](#answer-1)
+  - [Q3. Responsive design](#q3-responsive-design)
+    - [Answer](#answer-2)
+  - [Q4. Accessibility](#q4-accessibility)
+    - [Answer](#answer-3)
+  - [Q5. Service worker](#q5-service-worker)
+    - [Answer](#answer-4)
 ## Restaurant reviews project
 
 ### Q1. My map doesn't show up
