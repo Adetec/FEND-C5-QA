@@ -111,6 +111,87 @@ You can use chrome developer tool:
 ### Q5. Service worker
 My service worker doesn't work properly
 
+#### Answer
 
+Make sure to follow and check these steps:
+
+1. Create 2 file named e.g `sw.js` & `service-worker.js`, it's recommended to save them outside `js` folder, which means in the app root folder.
+2. in `sw.js` your code could be structured like this example below:
+```
+let versionOfCache = "SET A NAME VERSION"; // Whatever you want
+
+self.addEventListener('fetch' , event => {
+    event.respondWith(
+        caches.match(event.request).then(response => {
+            // Check caches
+            if (response) return response;
+            return response || fetch(event.request).then(fetchResponse =>
+                caches.open(versionOfCache).then(cache => {
+                    // Put file in cache next time
+                    cache.put(event.request, fetchResponse.clone());
+                    return fetchResponse;
+                })
+            ).catch(error => {
+                // Logging errors if ther's a problem
+                console.log('YOUR MESSAGE ERROR HERE', error);
+            });
+        })
+    );
+});
+
+self.addEventListener('install' , event => {
+    // Install cache files
+    event.waitUntil(
+        caches.open(versionOfCache).then(cache=> {
+            cache.addAll(
+                // Add images to cache without passing promise
+                []
+            );
+            return cache.addAll(
+                // Add principal files to cache
+                []
+            );
+        })
+    );
+});
+
+self.addEventListener('activate' , event => {
+    // Handle old cached version
+    event.waitUntil(
+        caches.keys().then(cacheStored => {
+            return Promise.all(
+             cacheStored.map(thisCache => {
+                 if (versionOfCache !== thisCache) {
+                    return caches.delete(thisCache);
+                 }
+             })
+            )
+        }
+
+        )
+    );
+});
+```
+3. In `service-worker.js` file, register your service worker in the browser:
+
+```
+if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('sw.js').then(registration => {
+        console.log('Service worker is registred with scope', registration.scope);
+    }).catch(e => {
+        console.log(e);
+    });
+
+}
+```
+**PS**: This is just a starter code
+
+4. Make sure you add this script file befor closed body tag inside both of `index.html`, `restaurant.html`files
+```
+        <!-- Add service worker register script -->
+        <script src="sw-register.js"></script>
+    </body>
+</html>
+```
 
 
