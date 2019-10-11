@@ -5,7 +5,7 @@
 ### Q1. My map doesn't show up
 I created my mapbox token and input it on both `main.js` & `restaurant_info.js`, but I got a 401 error msg
 
-```
+```JS
 /**
  * Initialize leaflet map, called from HTML.
  */
@@ -34,7 +34,7 @@ How can I fix that?
 
 #### Answer
 Simply, you did forget to remove open and close tags at the beginning and the end of your token
-```
+```JS
 mapboxToken: 'pk.eyJ1IjoiYWRldGVjaCIsImEiOiJjamtpdjM5YnkxOWt2M3JreGpkbnl6N3M3In0.6nZz0MSvsz6HKHJfYq-0zg',
 ```
 
@@ -44,12 +44,12 @@ It should be working now
 ### Q2. Problem with python server
 
 When I run the following command lin on my terminal to start the server
-```
+```bash
 python3 -m http.server 8000
 ```
 
 I get bunch of error lines, it says: **Address already in use**
-```
+```bash
 python3 -m http.server 8000
 Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/runpy.py", line 193, in _run_module_as_main
@@ -117,7 +117,7 @@ Make sure to follow and check these steps:
 
 1. Create 2 file named e.g `sw.js` & `service-worker.js`, it's recommended to save them outside `js` folder, which means in the app root folder.
 2. in `sw.js` your code could be structured like this example below:
-```
+```JS
 let versionOfCache = "SET A NAME VERSION"; // Whatever you want
 
 self.addEventListener('fetch' , event => {
@@ -174,7 +174,7 @@ self.addEventListener('activate' , event => {
 ```
 3. In `service-worker.js` file, register your service worker in the browser:
 
-```
+```JS
 if (navigator.serviceWorker) {
     navigator.serviceWorker.register('sw.js').then(registration => {
         console.log('Service worker is registred with scope', registration.scope);
@@ -187,7 +187,7 @@ if (navigator.serviceWorker) {
 **PS**: This is just a starter code
 
 4. Make sure you add this script file befor closed body tag inside both of `index.html`, `restaurant.html`files
-```
+```HTML
         <!-- Add service worker register script -->
         <script src="sw-register.js"></script>
     </body>
