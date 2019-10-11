@@ -94,5 +94,19 @@ No, Bootstrap and other CSS frameworks should not be used, all responsiveness sh
 ### Q4. Accessibility
 How can I be sure that my work on accessibility meets the specification? 
 
+#### Answer
+
+You can use chrome developer tool:
+1. The Accessibility pane is where you can view the accessibility tree, ARIA attributes, and computed accessibility properties of DOM nodes.
+
+    * Go to Accessibility pane
+    * Click the **Elements** tab
+    * In the **DOM Tree**, select the element which you want to inspect.
+    * Click the **Accessibility tab**
+    * Check this full [documentation](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) for more explantation
+
+***
+
+
 
 
