@@ -108,5 +108,9 @@ You can use chrome developer tool:
 ***
 
 
+### Q5. Service worker
+My service worker doesn't work properly
+
+
 
 
