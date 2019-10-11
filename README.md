@@ -2,7 +2,7 @@
 
 ## Restaurant reviews project
 
-### 1. My map doesn't show up
+### Q1. My map doesn't show up
 I created my mapbox token and input it on both `main.js` & `restaurant_info.js`, but I got a 401 error msg
 
 ```
@@ -29,4 +29,19 @@ initMap = () => {
 
 ```
 ![](img/mapbox-token.png?raw=true)
+
+How can I fix that?
+
+### Answer
+Simply, you did forget to remove open and close tags at the beginning and the end of your token
+```
+mapboxToken: 'pk.eyJ1IjoiYWRldGVjaCIsImEiOiJjamtpdjM5YnkxOWt2M3JreGpkbnl6N3M3In0.6nZz0MSvsz6HKHJfYq-0zg',
+```
+
+It should be working now
+***
+
+
+
+
 
