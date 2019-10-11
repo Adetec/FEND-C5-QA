@@ -32,7 +32,7 @@ initMap = () => {
 
 How can I fix that?
 
-### Answer
+#### Answer
 Simply, you did forget to remove open and close tags at the beginning and the end of your token
 ```
 mapboxToken: 'pk.eyJ1IjoiYWRldGVjaCIsImEiOiJjamtpdjM5YnkxOWt2M3JreGpkbnl6N3M3In0.6nZz0MSvsz6HKHJfYq-0zg',
@@ -68,6 +68,7 @@ Traceback (most recent call last):
     self.socket.bind(self.server_address)
 OSError: [Errno 48] Address already in use
 ```
+#### Answer
 
 probably you have a server already running on your machine with the same port 8000, perhaps there is a process running in background and using that port, so you need to change your app port ton another number:
 
@@ -80,6 +81,11 @@ python3 -m http.server 8060
 ```
 * Don't forget to update your `README.md` file
 ***
+
+### Q3. Responsive design
+
+Can I use Bootstrap to make my app responsive for this project?
+
 
 
 
