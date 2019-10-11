@@ -41,6 +41,34 @@ mapboxToken: 'pk.eyJ1IjoiYWRldGVjaCIsImEiOiJjamtpdjM5YnkxOWt2M3JreGpkbnl6N3M3In0
 It should be working now
 ***
 
+### Q2. Problem with python server
+
+When I run the following command lin on my terminal to start the server
+```
+python3 -m http.server 8000
+```
+
+I get bunch of error lines, it says: **Address already in use**
+```
+python3 -m http.server 8000
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/server.py", line 1262, in <module>
+    test(HandlerClass=handler_class, port=args.port, bind=args.bind)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/server.py", line 1230, in test
+    with ServerClass(server_address, HandlerClass) as httpd:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/server.py", line 137, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+```
+
 
 
 
