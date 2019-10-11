@@ -86,6 +86,10 @@ python3 -m http.server 8060
 
 Can I use Bootstrap to make my app responsive for this project?
 
+#### Answer
+
+No, Bootstrap and other CSS frameworks should not be used, all responsiveness should be done with CSS.
+
 
 
 
