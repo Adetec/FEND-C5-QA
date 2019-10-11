@@ -69,6 +69,17 @@ Traceback (most recent call last):
 OSError: [Errno 48] Address already in use
 ```
 
+probably you have a server already running on your machine with the same port 8000, perhaps there is a process running in background and using that port, so you need to change your app port ton another number:
+
+On `db_helper.js` file of your project, change the port value
+
+* e.g: ```const port= 8060```
+* Try to run the server with updated port
+```
+python3 -m http.server 8060
+```
+* Don't forget to update your `README.md` file
+***
 
 
 
