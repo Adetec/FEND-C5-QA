@@ -10,6 +10,7 @@
     - [Answer](#answer-3)
   - [Q5. Service worker](#q5-service-worker)
     - [Answer](#answer-4)
+  - [Q4. Accessibility (Contrast ratio)](#q4-accessibility-contrast-ratio)
 ## Restaurant reviews project
 
 ### Q1. My map doesn't show up
@@ -203,5 +204,10 @@ if (navigator.serviceWorker) {
     </body>
 </html>
 ```
+***
 
+
+### Q4. Accessibility (Contrast ratio)
+
+In web acessibility how to choose sufficient contrast ratio?
 
