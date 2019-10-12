@@ -4,21 +4,22 @@
     - [Answer](#answer)
 - [Arcade game project](#arcade-game-project)
   - [Q1. Changing character](#q1-changing-character)
+    - [Answer](#answer-1)
 - [Restaurant reviews project](#restaurant-reviews-project)
   - [Q1. My map doesn't show up](#q1-my-map-doesnt-show-up)
-    - [Answer](#answer-1)
-  - [Q2. Problem with python server](#q2-problem-with-python-server)
     - [Answer](#answer-2)
-  - [Q3. Responsive design](#q3-responsive-design)
+  - [Q2. Problem with python server](#q2-problem-with-python-server)
     - [Answer](#answer-3)
-  - [Q4. Accessibility](#q4-accessibility)
+  - [Q3. Responsive design](#q3-responsive-design)
     - [Answer](#answer-4)
-  - [Q5. Service worker](#q5-service-worker)
+  - [Q4. Accessibility](#q4-accessibility)
     - [Answer](#answer-5)
-  - [Q6. Accessibility (Contrast ratio)](#q6-accessibility-contrast-ratio)
+  - [Q5. Service worker](#q5-service-worker)
     - [Answer](#answer-6)
-  - [Q7. Accessibility (Focus)](#q7-accessibility-focus)
+  - [Q6. Accessibility (Contrast ratio)](#q6-accessibility-contrast-ratio)
     - [Answer](#answer-7)
+  - [Q7. Accessibility (Focus)](#q7-accessibility-focus)
+    - [Answer](#answer-8)
 
 ## Memory game project
 
@@ -45,7 +46,25 @@ this.sprite = 'images/char-princess-girl.png';
 It doesn't work, and get this error
 
 ![](img/char-error.png?raw=true)
-But if I leave the default boy character, the image is render correctly, I wonder where is the problem!
+
+But if I leave the default boy character, the image is rendered correctly, I wonder where is the problem!
+
+#### Answer
+The game engine reloads only resouces defined in the array passed into Rescources.load() method, take a look on `engine.js` and add your image character there:
+
+```JS
+Resources.load([
+  'images/stone-block.png',
+  'images/water-block.png',
+  'images/grass-block.png',
+  'images/enemy-bug.png',
+  'images/char-boy.png',
+  'images/char-princess-girl.png', // here
+]);
+```
+Relaod the game, it should be rendred now
+***
+
 
 ## Restaurant reviews project
 
