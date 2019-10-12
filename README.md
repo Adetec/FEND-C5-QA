@@ -20,9 +20,10 @@
     - [Answer](#answer-7)
   - [Q7. Accessibility (Focus)](#q7-accessibility-focus)
     - [Answer](#answer-8)
-- [General](#general)
-  - [Q1. JS & DOM](#q1-js--dom)
-  - [Answer](#answer-9)
+  - [General](#general)
+    - [Q1. JS & DOM](#q1-js--dom)
+    - [Answer](#answer-9)
+  - [Q2. Forgetfulness](#q2-forgetfulness)
 
 ## Memory game project
 
@@ -307,15 +308,20 @@ Important headings we focus to are those who user can interact with. For instanc
 ***
 
 
-## General
+### General
 
-### Q1. JS & DOM
+#### Q1. JS & DOM
 
 انا عندى مشكلة فى التطبيق فى المشاريع ببقي فاهمة الاساسيات كويس جدا بس لما ببدأ أطبق على مشروع او بروجكت حقيقى بحس انى تايهة ومش عارفة ابدأ منين وده بيسبب لى احباط شديد جدا وخصوصا التطبيق على
 JavaScript&DOM
 
-### Answer
+#### Answer
 يمكنك التواصل مع الـ `student advocates` أو زملائك إن احتجت لأي مساعدة سواء لها علاقة بالدروس أو المشاريع
 لاتتردي في فعل ذلك، ففي الأخير القناة أنشئت خصبصا لمساعدة بعضنا البعض
 
 ***
+
+### Q2. Forgetfulness
+
+هل الطبيعى انى أنسى الكود وأحتاج كل شوية انى أراجعه وده بيخلينى أحس بملل ولا الأفضل اطبق ولما يقف قدامى حاجة أبدأ ابحث عن طريقة تنفيذها ؟
+
