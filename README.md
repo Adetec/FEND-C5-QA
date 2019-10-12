@@ -10,7 +10,8 @@
     - [Answer](#answer-3)
   - [Q5. Service worker](#q5-service-worker)
     - [Answer](#answer-4)
-  - [Q4. Accessibility (Contrast ratio)](#q4-accessibility-contrast-ratio)
+  - [Q6. Accessibility (Contrast ratio)](#q6-accessibility-contrast-ratio)
+    - [Answer](#answer-5)
 ## Restaurant reviews project
 
 ### Q1. My map doesn't show up
@@ -207,7 +208,23 @@ if (navigator.serviceWorker) {
 ***
 
 
-### Q4. Accessibility (Contrast ratio)
+### Q6. Accessibility (Contrast ratio)
 
 In web acessibility how to choose sufficient contrast ratio?
+
+#### Answer
+
+Make sure that the contrast ratio between text color and background color is at least 4.5:1, be aware also that for some people, especially people with dyslexia, a very high contrast color scheme can make reading more difficult. It’s a good idea to choose an off-white background color rather than a white background to aid on-screen reading.
+
+To inspect the contrast ratio of an element, let's open chrome developer tool
+
+![](img/contrast-ratio1.png?raw=true)
+
+Let's make the background color more darker
+
+![](img/contrast-ratio2.png?raw=true)
+
+I recommend you using this amazing [Color Contrast Analyser (CCA)](https://developer.paciellogroup.com/resources/contrastanalyser/) tool, it helps you determine the legibility of text and the contrast of visual elements.
+
+***
 
