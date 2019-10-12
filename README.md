@@ -1,34 +1,34 @@
 
 - [Memory game project](#memory-game-project)
-  - [Q1. Performance](#q1-performance)
+  - [Q1. Performance (Adel)](#q1-performance-adel)
     - [Answer](#answer)
 - [Arcade game project](#arcade-game-project)
-  - [Q1. Changing character](#q1-changing-character)
+  - [Q1. Changing character (Micheal)](#q1-changing-character-micheal)
     - [Answer](#answer-1)
 - [Restaurant reviews project](#restaurant-reviews-project)
-  - [Q1. My map doesn't show up](#q1-my-map-doesnt-show-up)
+  - [Q1. My map doesn't show up (Adel)](#q1-my-map-doesnt-show-up-adel)
     - [Answer](#answer-2)
-  - [Q2. Problem with python server](#q2-problem-with-python-server)
+  - [Q2. Problem with python server (Adel)](#q2-problem-with-python-server-adel)
     - [Answer](#answer-3)
-  - [Q3. Responsive design](#q3-responsive-design)
+  - [Q3. Responsive design (Micheal)](#q3-responsive-design-micheal)
     - [Answer](#answer-4)
-  - [Q4. Accessibility](#q4-accessibility)
+  - [Q4. Accessibility (Adel)](#q4-accessibility-adel)
     - [Answer](#answer-5)
-  - [Q5. Service worker](#q5-service-worker)
+  - [Q5. Service worker (Adel)](#q5-service-worker-adel)
     - [Answer](#answer-6)
-  - [Q6. Accessibility (Contrast ratio)](#q6-accessibility-contrast-ratio)
+  - [Q6. Accessibility (Contrast ratio) (Adel)](#q6-accessibility-contrast-ratio-adel)
     - [Answer](#answer-7)
-  - [Q7. Accessibility (Focus)](#q7-accessibility-focus)
+  - [Q7. Accessibility (Focus) (Micheal)](#q7-accessibility-focus-micheal)
     - [Answer](#answer-8)
 - [General](#general)
-  - [Q1. JS & DOM](#q1-js--dom)
+  - [Q1. JS & DOM (Micheal)](#q1-js--dom-micheal)
     - [Answer](#answer-9)
-  - [Q2. Forgetfulness](#q2-forgetfulness)
+  - [Q2. Forgetfulness (Micheal)](#q2-forgetfulness-micheal)
     - [Answer](#answer-10)
 
 ## Memory game project
 
-### Q1. Performance
+### Q1. Performance (Adel)
 My game is very slow on loading, how can I improve it's performance
 
 #### Answer
@@ -43,7 +43,7 @@ You may have external libraries loading synchronously, so try to use `prefetch` 
 
 ## Arcade game project
 
-### Q1. Changing character
+### Q1. Changing character (Micheal)
 I've changed the player character image to princess girl, so I replaced `char-boy.png` to `char-princess-girl.png` in the player sprite
 
 ```JS
@@ -74,7 +74,7 @@ Relaod the game, it should be rendred now
 
 ## Restaurant reviews project
 
-### Q1. My map doesn't show up
+### Q1. My map doesn't show up (Adel)
 I created my mapbox token and input it on both `main.js` & `restaurant_info.js`, but I got a 401 error msg
 
 ```JS
@@ -113,7 +113,7 @@ mapboxToken: 'pk.eyJ1IjoiYWRldGVjaCIsImEiOiJjamtpdjM5YnkxOWt2M3JreGpkbnl6N3M3In0
 It should be working now
 ***
 
-### Q2. Problem with python server
+### Q2. Problem with python server (Adel)
 
 When I run the following command line on my terminal to start the server
 
@@ -163,7 +163,7 @@ https://www.npmjs.com/package/http-server
 
 
 
-### Q3. Responsive design
+### Q3. Responsive design (Micheal)
 
 Can I use Bootstrap to make my app responsive for this project?
 
@@ -172,7 +172,7 @@ Can I use Bootstrap to make my app responsive for this project?
 No, Bootstrap and other CSS frameworks should not be used, all responsiveness should be done with **PURE CSS**.
 ***
 
-### Q4. Accessibility
+### Q4. Accessibility (Adel)
 How can I be sure that my work on accessibility meets the specification? 
 
 #### Answer
@@ -189,7 +189,7 @@ You can use chrome developer tool:
 ***
 
 
-### Q5. Service worker
+### Q5. Service worker (Adel)
 My service worker doesn't work properly
 
 #### Answer
@@ -278,7 +278,7 @@ if (navigator.serviceWorker) {
 ***
 
 
-### Q6. Accessibility (Contrast ratio)
+### Q6. Accessibility (Contrast ratio) (Adel)
 
 In web acessibility how to choose sufficient contrast ratio?
 
@@ -299,7 +299,7 @@ I recommend you using this amazing [Color Contrast Analyser (CCA)](https://devel
 ***
 
 
-### Q7. Accessibility (Focus)
+### Q7. Accessibility (Focus) (Micheal)
 
 In lesson 2 focus - 5 deciding whats in focus: says that is counterproductive to add tabindex to elements like headers. how we focus to the important heading?
 
@@ -311,7 +311,7 @@ Important headings we focus to are those who user can interact with. For instanc
 
 ## General
 
-### Q1. JS & DOM
+### Q1. JS & DOM (Micheal)
 
 انا عندى مشكلة فى التطبيق فى المشاريع ببقي فاهمة الاساسيات كويس جدا بس لما ببدأ أطبق على مشروع او بروجكت حقيقى بحس انى تايهة ومش عارفة ابدأ منين وده بيسبب لى احباط شديد جدا وخصوصا التطبيق على
 JavaScript&DOM
@@ -322,7 +322,7 @@ JavaScript&DOM
 
 ***
 
-### Q2. Forgetfulness
+### Q2. Forgetfulness (Micheal)
 
 هل الطبيعى انى أنسى الكود وأحتاج كل شوية انى أراجعه وده بيخلينى أحس بملل ولا الأفضل اطبق ولما يقف قدامى حاجة أبدأ ابحث عن طريقة تنفيذها ؟
 
