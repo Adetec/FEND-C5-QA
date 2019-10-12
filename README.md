@@ -24,10 +24,10 @@
 ## Memory game project
 
 ### Q1. Performance
-My game is very slow on loading, how can I improve performance
+My game is very slow on loading, how can I improve it's performance
 
 #### Answer
-You may have external libraries loading synchronously, so try to use prefetch to avoid CSS render blocking, and async with Javascript files to enhance performance and load the game faster.
+You may have external libraries loading synchronously, so try to use `prefetch` to avoid `CSS` render blocking, and `async` with Javascript files to enhance performance and load the game faster.
 
 ```HTML
 <link rel="stylesheet prefetch" href="..">
@@ -40,6 +40,7 @@ You may have external libraries loading synchronously, so try to use prefetch to
 
 ### Q1. Changing character
 I've changed the player character image to princess girl, so I replaced `char-boy.png` to `char-princess-girl.png` in the player sprite
+
 ```JS
 this.sprite = 'images/char-princess-girl.png';
 ```
@@ -47,10 +48,10 @@ It doesn't work, and get this error
 
 ![](img/char-error.png?raw=true)
 
-But if I leave the default boy character, the image is rendered correctly, I wonder where is the problem!
+But if I leave the default boy character, the image is rendered correctly. I wonder where is the problem!
 
 #### Answer
-The game engine reloads only resouces defined in the array passed into Rescources.load() method, take a look on `engine.js` and add your image character there:
+The game engine reloads only resources defined in the array passed into `Rescources.load()` method, take a look at `engine.js` and add your image character there:
 
 ```JS
 Resources.load([
@@ -109,12 +110,14 @@ It should be working now
 
 ### Q2. Problem with python server
 
-When I run the following command lin on my terminal to start the server
+When I run the following command line on my terminal to start the server
+
 ```bash
 python3 -m http.server 8000
 ```
 
 I get bunch of error lines, it says: **Address already in use**
+
 ```bash
 python3 -m http.server 8000
 Traceback (most recent call last):
@@ -136,7 +139,7 @@ OSError: [Errno 48] Address already in use
 ```
 #### Answer
 
-probably you have a server already running on your machine with the same port 8000, perhaps there is a process running in background and using that port, so you need to change your app port ton another number:
+probably you have a server already running on your machine with the same port 8000, perhaps there is a process running in background and using that port, so you need to change your app port to another number:
 
 On `db_helper.js` file of your project, change the port value
 
@@ -154,7 +157,7 @@ Can I use Bootstrap to make my app responsive for this project?
 
 #### Answer
 
-No, Bootstrap and other CSS frameworks should not be used, all responsiveness should be done with CSS.
+No, Bootstrap and other CSS frameworks should not be used, all responsiveness should be done with **PURE CSS**.
 ***
 
 ### Q4. Accessibility
@@ -181,8 +184,9 @@ My service worker doesn't work properly
 
 Make sure to follow and check these steps:
 
-1. Create 2 file named e.g `sw.js` & `service-worker.js`, it's recommended to save them outside `js` folder, which means in the app root folder.
+1. Create 2 files named e.g `sw.js` & `service-worker.js`, it's recommended to save them outside `js` folder, which means in the app root folder.
 2. in `sw.js` your code could be structured like this example below:
+3. 
 ```JS
 let versionOfCache = "SET A NAME VERSION"; // Whatever you want
 
@@ -252,7 +256,7 @@ if (navigator.serviceWorker) {
 ```
 **PS**: This is just a starter code
 
-4. Make sure you add this script file befor closed body tag inside both of `index.html`, `restaurant.html`files
+4. Make sure you add this script file before closed body tag inside both of `index.html`, `restaurant.html`files
 ```HTML
         <!-- Add service worker register script -->
         <script src="sw-register.js"></script>
@@ -268,7 +272,7 @@ In web acessibility how to choose sufficient contrast ratio?
 
 #### Answer
 
-Make sure that the contrast ratio between text color and background color is at least 4.5:1, be aware also that for some people, especially people with dyslexia, a very high contrast color scheme can make reading more difficult. It’s a good idea to choose an off-white background color rather than a white background to aid on-screen reading.
+Make sure that the contrast ratio between text color and background color is at least 4.5, be aware also that for some people, especially people with dyslexia, a very high contrast color scheme can make reading more difficult. It’s a good idea to choose an off-white background color rather than a white background to aid on-screen reading.
 
 To inspect the contrast ratio of an element, let's open chrome developer tool
 
