@@ -1,25 +1,37 @@
 
 - [Memory game project](#memory-game-project)
   - [Q1. Performance](#q1-performance)
+    - [Answer](#answer)
 - [Restaurant reviews project](#restaurant-reviews-project)
   - [Q1. My map doesn't show up](#q1-my-map-doesnt-show-up)
-    - [Answer](#answer)
-  - [Q2. Problem with python server](#q2-problem-with-python-server)
     - [Answer](#answer-1)
-  - [Q3. Responsive design](#q3-responsive-design)
+  - [Q2. Problem with python server](#q2-problem-with-python-server)
     - [Answer](#answer-2)
-  - [Q4. Accessibility](#q4-accessibility)
+  - [Q3. Responsive design](#q3-responsive-design)
     - [Answer](#answer-3)
-  - [Q5. Service worker](#q5-service-worker)
+  - [Q4. Accessibility](#q4-accessibility)
     - [Answer](#answer-4)
-  - [Q6. Accessibility (Contrast ratio)](#q6-accessibility-contrast-ratio)
+  - [Q5. Service worker](#q5-service-worker)
     - [Answer](#answer-5)
-  - [Q7. Accessibility (Focus)](#q7-accessibility-focus)
+  - [Q6. Accessibility (Contrast ratio)](#q6-accessibility-contrast-ratio)
     - [Answer](#answer-6)
+  - [Q7. Accessibility (Focus)](#q7-accessibility-focus)
+    - [Answer](#answer-7)
 
 ## Memory game project
+
 ### Q1. Performance
 My game is very slow on loading, how can I improve performance
+
+#### Answer
+You may have external libraries loading synchronously, so try to use prefetch to avoid CSS render blocking, and async with Javascript files to enhance performance and load the game faster.
+
+```HTML
+<link rel="stylesheet prefetch" href="..">
+<script async src="..">
+```
+***
+
 
 ## Restaurant reviews project
 
