@@ -20,6 +20,8 @@
     - [Answer](#answer-7)
   - [Q7. Accessibility (Focus)](#q7-accessibility-focus)
     - [Answer](#answer-8)
+- [General](#general)
+  - [Q1. JS & DOM](#q1-js--dom)
 
 ## Memory game project
 
@@ -301,3 +303,12 @@ In lesson 2 focus - 5 deciding whats in focus: says that is counterproductive to
 #### Answer
 
 Important headings we focus to are those who user can interact with. For instance, **Heading links** that redirect user to another page or other section in the same page.
+***
+
+
+## General
+
+### Q1. JS & DOM
+
+انا عندى مشكلة فى التطبيق فى المشاريع ببقي فاهمة الاساسيات كويس جدا بس لما ببدأ أطبق على مشروع او بروجكت حقيقى بحس انى تايهة ومش عارفة ابدأ منين وده بيسبب لى احباط شديد جدا وخصوصا التطبيق على
+JavaScript&DOM
