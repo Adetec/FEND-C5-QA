@@ -22,6 +22,7 @@
     - [Answer](#answer-8)
 - [General](#general)
   - [Q1. JS & DOM](#q1-js--dom)
+  - [Answer](#answer-9)
 
 ## Memory game project
 
@@ -312,3 +313,9 @@ Important headings we focus to are those who user can interact with. For instanc
 
 انا عندى مشكلة فى التطبيق فى المشاريع ببقي فاهمة الاساسيات كويس جدا بس لما ببدأ أطبق على مشروع او بروجكت حقيقى بحس انى تايهة ومش عارفة ابدأ منين وده بيسبب لى احباط شديد جدا وخصوصا التطبيق على
 JavaScript&DOM
+
+### Answer
+يمكنك التواصل مع الـ `student advocates` أو زملائك إن احتجت لأي مساعدة سواء لها علاقة بالدروس أو المشاريع
+لاتتردي في فعل ذلك، ففي الأخير القناة أنشئت خصبصا لمساعدة بعضنا البعض
+
+***
