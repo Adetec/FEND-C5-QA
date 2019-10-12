@@ -2,6 +2,8 @@
 - [Memory game project](#memory-game-project)
   - [Q1. Performance](#q1-performance)
     - [Answer](#answer)
+- [Arcade game project](#arcade-game-project)
+  - [Q1. Changing character](#q1-changing-character)
 - [Restaurant reviews project](#restaurant-reviews-project)
   - [Q1. My map doesn't show up](#q1-my-map-doesnt-show-up)
     - [Answer](#answer-1)
@@ -32,6 +34,18 @@ You may have external libraries loading synchronously, so try to use prefetch to
 ```
 ***
 
+
+## Arcade game project
+
+### Q1. Changing character
+I've changed the player character image to princess girl, so I replaced `char-boy.png` to `char-princess-girl.png` in the player sprite
+```JS
+this.sprite = 'images/char-princess-girl.png';
+```
+It doesn't work, and get this error
+
+![](img/char-error.png?raw=true)
+But if I leave the default boy character, the image is render correctly, I wonder where is the problem!
 
 ## Restaurant reviews project
 
