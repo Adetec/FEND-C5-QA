@@ -148,8 +148,15 @@ On `db_helper.js` file of your project, change the port value
 ```
 python3 -m http.server 8060
 ```
+
+If you face problems with the previous method, you can try this link:
+https://www.npmjs.com/package/http-server
+
+
 * Don't forget to update your `README.md` file
 ***
+
+
 
 ### Q3. Responsive design
 
