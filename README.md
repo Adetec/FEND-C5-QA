@@ -1,4 +1,6 @@
 
+- [Memory game project](#memory-game-project)
+  - [Q1. Performance](#q1-performance)
 - [Restaurant reviews project](#restaurant-reviews-project)
   - [Q1. My map doesn't show up](#q1-my-map-doesnt-show-up)
     - [Answer](#answer)
@@ -14,6 +16,11 @@
     - [Answer](#answer-5)
   - [Q7. Accessibility (Focus)](#q7-accessibility-focus)
     - [Answer](#answer-6)
+
+## Memory game project
+### Q1. Performance
+My game is very slow on loading, how can I improve performance
+
 ## Restaurant reviews project
 
 ### Q1. My map doesn't show up
