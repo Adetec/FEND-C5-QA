@@ -13,6 +13,7 @@
   - [Q6. Accessibility (Contrast ratio)](#q6-accessibility-contrast-ratio)
     - [Answer](#answer-5)
   - [Q7. Accessibility (Focus)](#q7-accessibility-focus)
+    - [Answer](#answer-6)
 ## Restaurant reviews project
 
 ### Q1. My map doesn't show up
@@ -232,4 +233,8 @@ I recommend you using this amazing [Color Contrast Analyser (CCA)](https://devel
 
 ### Q7. Accessibility (Focus)
 
-In lesson 2 focus : 5 deciding whats in focus : says that is counterproductive to add tabindex to elements like headers. how we focus to the important heading?
+In lesson 2 focus - 5 deciding whats in focus: says that is counterproductive to add tabindex to elements like headers. how we focus to the important heading?
+
+#### Answer
+
+Important headings we focus to are those who user can interact with. For instance, **Heading links** that redirect user to another page or other section in the same page.
